@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% block head %}
 {{ super() }}
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
   <meta name="twitter:creator" content="{{ TWITTER_USERNAME }}">
   <meta name="twitter:url" content="{{ SITEURL }}/{{ article.url }}">
   <meta name="twitter:title" content="{{ SITENAME }} ~ {{ article.title }}">
