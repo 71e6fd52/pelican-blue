@@ -2,19 +2,6 @@
 
 Responsive theme for [Pelican](http://blog.getpelican.com/) Static Site Generator, Powered by [Python](https://www.python.org/) Programming language.
 
-## Demo
-
-You can see the theme in action at https://parbhatpuri.com
-
-### Screenshots
-
-![homepage-mobile](screenshot-mobile.png)
-
-![homepage-web](screenshot-web.png)
-
-![article](screenshot-article.png)
-
-
 ## Features
 
 * Responsive (Mobile Friendly Test on [Google](https://www.google.com/webmasters/tools/mobile-friendly/?url=https%3A%2F%2Fparbhatpuri.com%2F))
