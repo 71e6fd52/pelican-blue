@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 {% block head %}
 {{ super() }}
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-
   <meta name="twitter:creator" content="{{ TWITTER_USERNAME }}">
   <meta name="twitter:url" content="{{ SITEURL }}/{{ article.url }}">
   <meta name="twitter:title" content="{{ SITENAME }} ~ {{ article.title }}">
@@ -76,12 +74,6 @@
     </div>
 
     <div class="commit">
-      <!-- UY BEGIN -->
-      {% if UYAN_UID %}
-        <div id="uyan_frame"></div>
-        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid={{ UYAN_UID }}"></script>
-      {% endif %}
-      <!-- UY END -->
       <!-- DISQUS BEGIN -->
       {% if DISQUS_SITENAME %}
         <div id="disqus_thread"></div>
@@ -118,9 +110,6 @@
       {% endif %}
       <!-- GITMENT END -->
       <ul class='title'>
-        <li class="uyan_frame">
-          <a href="#uyan_frame">友言（国内可用）</a>
-        </li>
         <li class="disqus_thread">
           <a href="#disqus_thread">Disqus（需翻墙）</a>
         </li>

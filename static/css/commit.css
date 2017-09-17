@@ -48,11 +48,6 @@
   color: #000;
 }
 
-.commit > #uyan_frame:target ~ .title > .uyan_frame {
-  background: #ff7300;
-  color: #fff;
-}
-
 .commit > #disqus_thread:target ~ .title > .disqus_thread {
   background: #ff7300;
   color: #fff;
