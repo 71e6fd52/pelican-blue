@@ -22,7 +22,7 @@
                     <h2 class="post_title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
                                               title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
                     </h2>
-                    {% if DISPLAY_SUMMARY and article.summary|length > 0 %}
+                    {% if DISPLAY_SUMMARY and article.has_summary %}
                         <p>{{ article.summary }}</p>
                     {% endif %}
                     <a href="{{ SITEURL }}/{{ article.author.url }}">@{{ article.author }}</a>
