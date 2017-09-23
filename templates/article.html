@@ -81,10 +81,10 @@
         &lt;  {{ article.prev_article.title }}
       </a>
     {% endif %}
-    {% if article.next_article_in_category %}
-      <a href="{{ SITEURL }}/{{ article.next_article_in_category.url}}"
+    {% if article.next_article %}
+      <a href="{{ SITEURL }}/{{ article.next_article.url}}"
         class="change-page right">
-        {{ article.next_article_in_category.title }}  &gt;
+        {{ article.next_article.title }}  &gt;
       </a>
     {% endif %}
     <hr style="width: 100%; visibility: hidden;">
