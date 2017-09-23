@@ -1,11 +1,11 @@
 # Pelican-Blue
 
-Responsive theme for [Pelican](http://blog.getpelican.com/) Static Site Generator, Powered by [Python](https://www.python.org/) Programming language.
+Responsive theme for [Pelican](https://blog.getpelican.com/) Static Site Generator, Powered by [Python](https://www.python.org/) Programming language.
 
 ## Features
 
 * Responsive (Mobile Friendly Test on [Google](https://www.google.com/webmasters/tools/mobile-friendly/?url=https%3A%2F%2Fparbhatpuri.com%2F))
-* Fast (Load time tested on [Pingdom](http://tools.pingdom.com/fpt/#!/bT0Pry/https://parbhatpuri.com/): 540ms)
+* Fast (Load time tested on [Pingdom](https://tools.pingdom.com/fpt/#!/bT0Pry/https://parbhatpuri.com/): 540ms)
 * Syntax highlighting for code blocks
 * [Disqus](https://disqus.com/) for Comments
 * Google Analytics
@@ -14,7 +14,7 @@ Responsive theme for [Pelican](http://blog.getpelican.com/) Static Site Generato
 
 ## Installation
 
-You can install Pelican-Blue theme to your earlier Pelican project or create a new project from the Pelican [Quickstart](http://docs.getpelican.com/en/3.6.3/quickstart.html) guide.
+You can install Pelican-Blue theme to your earlier Pelican project or create a new project from the Pelican [Quickstart](https://docs.getpelican.com/en/3.6.3/quickstart.html) guide.
 
 * Clone the repository
 
@@ -49,7 +49,7 @@ SOCIAL = (('linkedin', 'https://www.linkedin.com/in/username'),
 make devserver
 ```
 
-**Note:** If you are new to Pelican Static Site Generator, you can read the Pelican [Docs](http://docs.getpelican.com/en/3.6.3/) to learn the working of Pelican. You can also customize the theme after reading the documentation.
+**Note:** If you are new to Pelican Static Site Generator, you can read the Pelican [Docs](https://docs.getpelican.com/en/3.6.3/) to learn the working of Pelican. You can also customize the theme after reading the documentation.
 
 ## Settings
 
@@ -90,7 +90,7 @@ DISQUS_SITENAME = ""
 GOOGLE_ANALYTICS = ""
 ```
 
-For more information on publishing your site, read the publishing [docs](http://docs.getpelican.com/en/3.6.3/publish.html)
+For more information on publishing your site, read the publishing [docs](https://docs.getpelican.com/en/3.6.3/publish.html)
 
 ## Contributing
 
