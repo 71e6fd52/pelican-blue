@@ -75,6 +75,19 @@
       </div>
     </div>
 
+    {% if article.prev_article %}
+      <a href="{{ SITEURL }}/{{ article.prev_article.url}}"
+      class="change-page left">
+        &lt; {{ article.prev_article.title }}
+      </a>
+    {% endif %}
+    {% if article.next_article_in_category %}
+      <a href="{{ SITEURL }}/{{ article.next_article_in_category.url}}"
+        class="change-page right">
+        {{ article.next_article_in_category.title }} &gt;
+      </a>
+    {% endif %}
+
     <br>
     <h2>选一个评论框评论？</h2>
     <div class="commit">
