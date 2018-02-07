@@ -1,30 +1,11 @@
-.comment {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column-reverse;
-  margin: 0px auto;
-  align-items: center;
-}
-
-.comment > .title {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  white-space: nowrap;
+.comment > .comment_switch_head {
   width: 100%;
   margin: 10px auto;
   padding: 0;
 }
 
-.comment li {
-  width: 300px;
-  flex: 1;
+.comment > ul > li {
+  width: 50%;
   float: left;
   text-align: center;
   background: #ddd;
@@ -32,7 +13,6 @@
 }
 
 .comment > div {
-  padding: 0px 10px;
   display: none;
   width: 100%;
   background: #fff;
@@ -43,7 +23,7 @@
   color: #000;
 }
 
-.comment button {
+.comment .comment_switch {
   height: 60px;
   width: 100%;
   font-weight: 700;

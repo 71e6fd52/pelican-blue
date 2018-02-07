@@ -98,6 +98,33 @@
     <hr>
     <h2 style="text-align: center; margin: 15px 0 0 0;">选一个评论框评论？</h2>
     <div class="comment">
+      <script>
+        var switch_comment = function (name) {
+          if (name === 'disqus') {
+            document.getElementById('disqus_thread').style.display="block";
+            document.getElementById('gitment').style.display="none";
+            document.getElementById('disqus_comment').style.background="#ff7300";
+            document.getElementById('disqus_comment').style.color="#fff";
+            document.getElementById('gitment_comment').style.background="#ddd";
+            document.getElementById('gitment_comment').style.color="#000";
+          } else if (name === 'gitment') {
+            document.getElementById('disqus_thread').style.display="none";
+            document.getElementById('gitment').style.display="block";
+            document.getElementById('disqus_comment').style.background="#ddd";
+            document.getElementById('disqus_comment').style.color="#000";
+            document.getElementById('gitment_comment').style.background="#ff7300";
+            document.getElementById('gitment_comment').style.color="#fff";
+          }
+        };
+      </script>
+      <ul class='comment_switch_head'>
+        <li id="disqus_comment">
+          <button class="comment_switch" onclick="switch_comment('disqus')">Disqus</button>
+        </li>
+        <li id="gitment_comment">
+          <button class="comment_switch" onclick="switch_comment('gitment')">Gitment</button>
+        </li>
+      </ul>
       <!-- DISQUS BEGIN -->
       {% if DISQUS_SITENAME %}
         <div id="disqus_thread"></div>
@@ -133,33 +160,6 @@
         </script>
       {% endif %}
       <!-- GITMENT END -->
-      <script>
-        var switch_comment = function (name) {
-          if (name === 'disqus') {
-            document.getElementById('disqus_thread').style.display="block";
-            document.getElementById('gitment').style.display="none";
-            document.getElementById('disqus_comment').style.background="#ff7300";
-            document.getElementById('disqus_comment').style.color="#fff";
-            document.getElementById('gitment_comment').style.background="#ddd";
-            document.getElementById('gitment_comment').style.color="#000";
-          } else if (name === 'gitment') {
-            document.getElementById('disqus_thread').style.display="none";
-            document.getElementById('gitment').style.display="block";
-            document.getElementById('disqus_comment').style.background="#ddd";
-            document.getElementById('disqus_comment').style.color="#000";
-            document.getElementById('gitment_comment').style.background="#ff7300";
-            document.getElementById('gitment_comment').style.color="#fff";
-          }
-        };
-      </script>
-      <ul class='title'>
-        <li id="disqus_comment">
-          <button onclick="switch_comment('disqus')">Disqus</button>
-        </li>
-        <li id="gitment_comment">
-          <button onclick="switch_comment('gitment')">Gitment</button>
-        </li>
-      </ul>
     </div>
 
   </article>
