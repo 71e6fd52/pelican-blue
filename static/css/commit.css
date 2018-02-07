@@ -31,16 +31,6 @@
   display: inline;
 }
 
-.commit li a {
-  display: block;
-  width: 100%;
-  line-height: 36px;
-  font-size: 18px;
-  cursor: pointer;
-  text-decoration: none;
-  color: #000;
-}
-
 .commit > div {
   padding: 0px 10px;
   display: none;
@@ -48,21 +38,18 @@
   background: #fff;
 }
 
-.commit > *:target {
-  display: inline;
-}
-
 .commit > .title > li {
   background: #ddd;
   color: #000;
 }
 
-.commit > #disqus_thread:target ~ .title > .disqus_thread {
-  background: #ff7300;
+.commit button {
+  height: 60px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 24px;
   color: #fff;
-}
-
-.commit > #gitment:target ~ .title > .gitment {
-  background: #ff7300;
-  color: #fff;
+  border: 0;
+  background-color: inherit;
+  padding: 0;
 }
