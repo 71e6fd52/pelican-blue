@@ -1,4 +1,4 @@
-.commit {
+.comment {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.commit > .title {
+.comment > .title {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -22,7 +22,7 @@
   padding: 0;
 }
 
-.commit li {
+.comment li {
   width: 300px;
   flex: 1;
   float: left;
@@ -31,19 +31,19 @@
   display: inline;
 }
 
-.commit > div {
+.comment > div {
   padding: 0px 10px;
   display: none;
   width: 100%;
   background: #fff;
 }
 
-.commit > .title > li {
+.comment > .title > li {
   background: #ddd;
   color: #000;
 }
 
-.commit button {
+.comment button {
   height: 60px;
   width: 100%;
   font-weight: 700;
