@@ -128,8 +128,10 @@
       <!-- DISQUS BEGIN -->
       {% if DISQUS_SITENAME %}
         <div id="disqus_thread"></div>
-        <script type="text/javascript">
-          var disqus_identifier = "{{ article.url }}";
+        <script data-cfasync="false" type="text/javascript">
+          var disqus_config = function () {
+            this.page.identifier = "{{ article.url }}";
+          };
           (function () {
             var dsq = document.createElement('script');
             dsq.type = 'text/javascript';
